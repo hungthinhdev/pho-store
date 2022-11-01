@@ -1,0 +1,119 @@
+/* import base */
+@import url('./base.css');
+
+/* import page's component */
+@import url('./components/navigation.css');
+@import url('./components/footer.css');
+
+header .header__logo {
+  width: 14rem;
+  height: 7.9rem;
+  object-fit: contain;
+  object-position: center;
+  aspect-ratio: 16 / 9;
+}
+
+main.container .site {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-light-gray);
+  margin-bottom: 3.6rem;
+}
+
+.access-form {
+  width: 71rem;
+  border: var(--border-light-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem 1.5rem 7rem;
+}
+
+.access-form__title {
+  font-size: 2.4rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-medium-gray);
+  margin-bottom: 4.4rem;
+}
+
+.access-form__title span.active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--clr-blue);
+}
+
+.access-form__input-group {
+  padding: 0 8rem;
+  display: flex;
+  gap: var(--gutter);
+  justify-content: space-between; 
+}
+
+.access-form__input-group > * {
+  width: 100%;
+  border: var(--border-light-gray);
+  border-radius: var(--border-radius);
+}
+
+.access-form__input-group input {
+  width: 100%;
+  padding: .75rem 1rem;
+  font-size: 1.2rem;
+  font-weight: var(--fw-normal);
+}
+
+.access-form .form-input__seperate {
+  text-transform: uppercase;
+  text-align: center;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.access-form .form-input__seperate span {
+  position: absolute;
+  top: 160%;
+  left: 42%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.access-form .form-input__seperate span i {
+  font-size: 1.65rem;
+  font-weight: var(--fw-bold);
+  transition: all .15s ease-in;
+}
+
+.access-form .form-input__seperate span:hover > i {
+  color: var(--clr-blue);
+}
+
+.access-form__input-group .fb-sign-in-btn,
+.access-form__input-group .gg-sign-in-btn {
+  display: inline-block;
+  padding-left: 6rem;
+  font-size: 1.6rem;
+  color: var(--clr-light-gray);
+  text-decoration: none;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--gutter);
+}
+
+.access-form .login-btn {
+  display: inline-block;
+  width: calc(4 * var(--col-width) + var(--gutter));
+  font-size: 2.4rem;
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+  color: var(--clr-white);
+  background-color: var(--clr-blue);
+}
+
+main.container .ending-title {
+  margin-top: 19rem;
+  margin-bottom: 8.9rem;
+  font-size: 2.4rem;
+  color: var(--clr-light-gray);
+}
+
+

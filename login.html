@@ -32,7 +32,7 @@
     <div class="d-flex justify-content-center">
       <form class="access-form">
         <p class="text-capitalize d-flex justify-content-center gap-3 access-form__title">
-          <span>log in</span>
+          <span class="active">log in</span>
           <span>|</span>
           <span>sign up</span>
         </p>
@@ -40,8 +40,11 @@
           <input type="text" name="email-phone-input" placeholder="Email Address/Phone Number">
           <a href="#" class="fb-sign-in-btn"><i class="fa-brands fa-facebook-f"></i> facebook</a>
         </div>
-        <p class="text-uppercase text-center">or</p>
-        <div class="access-form__input-group mb-5">
+        <p class="form-input__seperate">
+          or <span class="show-password-btn"><i class="fa-regular fa-eye-slash"></i></span>
+        </p>
+        
+        <div class="access-form__input-group mb-5" style="position: relative;">
           <input type="password" name="password" placeholder="Password">
           <a href="#" class="gg-sign-in-btn"><i class="fa-brands fa-google"></i> google</a>
         </div>

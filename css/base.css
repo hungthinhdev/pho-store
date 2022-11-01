@@ -57,3 +57,19 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+main.container {
+  max-width: 100%;
+  width: calc(100% - (2 * var(--gutter)) - 2 * var(--col-width));
+  margin: 0 auto;
+}
+
